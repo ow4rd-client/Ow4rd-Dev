@@ -1,15 +1,25 @@
 package net.minecraft.client.gui;
 
+import java.awt.Color;
+
+import fr.ow4rd.client.button.ButtonMainMenu;
+import fr.ow4rd.client.utils.Utils;
 import net.minecraft.client.gui.achievement.GuiAchievements;
 import net.minecraft.client.gui.achievement.GuiStats;
 import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.util.ResourceLocation;
 
 public class GuiIngameMenu extends GuiScreen
 {
     private int field_146445_a;
     private int field_146444_f;
     private static final String __OBFID = "CL_00000703";
+	protected static final ResourceLocation logo;
+
+	static {
+		logo = new ResourceLocation("textures/ow4rd/gui/logo.png");
+	}
 
     /**
      * Adds the buttons (and other controls) to the screen in question.
@@ -20,20 +30,13 @@ public class GuiIngameMenu extends GuiScreen
         this.buttonList.clear();
         byte var1 = -16;
         boolean var2 = true;
-        this.buttonList.add(new GuiButton(1, this.width / 2 - 100, this.height / 4 + 120 + var1, I18n.format("menu.returnToMenu", new Object[0])));
-
-        if (!this.mc.isIntegratedServerRunning())
-        {
-            ((GuiButton)this.buttonList.get(0)).displayString = I18n.format("menu.disconnect", new Object[0]);
-        }
-
-        this.buttonList.add(new GuiButton(4, this.width / 2 - 100, this.height / 4 + 24 + var1, I18n.format("menu.returnToGame", new Object[0])));
-        this.buttonList.add(new GuiButton(0, this.width / 2 - 100, this.height / 4 + 96 + var1, 98, 20, I18n.format("menu.options", new Object[0])));
-        GuiButton var3;
-        this.buttonList.add(var3 = new GuiButton(7, this.width / 2 + 2, this.height / 4 + 96 + var1, 98, 20, I18n.format("menu.shareToLan", new Object[0])));
-        this.buttonList.add(new GuiButton(5, this.width / 2 - 100, this.height / 4 + 48 + var1, 98, 20, I18n.format("gui.achievements", new Object[0])));
-        this.buttonList.add(new GuiButton(6, this.width / 2 + 2, this.height / 4 + 48 + var1, 98, 20, I18n.format("gui.stats", new Object[0])));
-        var3.enabled = this.mc.isSingleplayer() && !this.mc.getIntegratedServer().getPublic();
+        this.buttonList.add(new ButtonMainMenu(1, 20,  170, 160, 20, "Retour Au Menu"));
+        this.buttonList.add(new ButtonMainMenu(0, 20,  200, 160, 20, "Menu Options"));
+        this.buttonList.add(new ButtonMainMenu(4, 20,  230, 160, 20, "Retour En Jeu"));
+        
+        
+       
+        
     }
 
     protected void actionPerformed(GuiButton p_146284_1_)
@@ -87,8 +90,15 @@ public class GuiIngameMenu extends GuiScreen
      */
     public void drawScreen(int p_73863_1_, int p_73863_2_, float p_73863_3_)
     {
-        this.drawDefaultBackground();
-        this.drawCenteredString(this.fontRendererObj, I18n.format("menu.game", new Object[0]), this.width / 2, 40, 16777215);
+    	this.drawRect(0, 0, 200, this.height, new Color(218, 112, 214, 140).getRGB());
+    	
+    	this.drawRect(0, 0, 0 + 195, 0 + 5, new Color(128, 0, 128, 150).getRGB());
+    	this.drawRect(0 + 200, 0, 0 + 195, this.height - 5, new Color(128, 0, 128, 150).getRGB());
+    	this.drawRect(0 + 200, this.height, 0 + 5, this.height - 5, new Color(128, 0, 128, 150).getRGB());
+    	this.drawRect(0, this.height, 0 + 5, 0 + 5, new Color(128, 0, 128, 150).getRGB());
+    	
+    	Utils.drawImage(20, 10 , 150, 150, logo);
+    	
         super.drawScreen(p_73863_1_, p_73863_2_, p_73863_3_);
     }
 }

@@ -1,772 +1,260 @@
-[21:53:37] [main/INFO]: Setting user: Player952
-[21:53:37] [main/INFO]: (Session ID is token:0:Player952)
-[21:53:37] [Client thread/INFO]: LWJGL Version: 2.9.1
-[21:53:37] [Client thread/INFO]: Reloading ResourceManager: Default
-[21:53:38] [Sound Library Loader/INFO]: Sound engine started
-[21:53:38] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[21:53:38] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[21:53:39] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[21:53:39] [Server thread/INFO]: Generating keypair
-[21:53:39] [Server thread/INFO]: Preparing start region for level 0
-[21:53:40] [Server thread/INFO]: Changing view distance to 5, from 10
-[21:53:40] [Server thread/INFO]: Player952[local:E:7c3ac459] logged in with entity id 46 at (747.1777214006995, 72.0, 452.34775051091475)
-[21:53:40] [Server thread/INFO]: Player952 joined the game
-[21:53:41] [Server thread/INFO]: Player952 has just earned the achievement [Taking Inventory]
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] Player952 has just earned the achievement [Taking Inventory]
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:41] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:42] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:43] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:44] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:45] [Server thread/INFO]: <Player952> 2
-[21:53:46] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:46] [Server thread/INFO]: <Player952> 2
-[21:53:46] [Server thread/INFO]: <Player952> 2
-[21:53:46] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:46] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:46] [Server thread/INFO]: <Player952> 2
-[21:53:46] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:47] [Server thread/INFO]: <Player952> 2
-[21:53:47] [Server thread/INFO]: <Player952> 2
-[21:53:47] [Server thread/INFO]: <Player952> 2
-[21:53:47] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:47] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:47] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:47] [Server thread/INFO]: <Player952> 2
-[21:53:47] [Server thread/INFO]: <Player952> 2
-[21:53:47] [Server thread/INFO]: <Player952> 2
-[21:53:47] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:47] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:47] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:47] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Server thread/INFO]: <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:48] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Server thread/INFO]: <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:49] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Server thread/INFO]: <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:50] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Server thread/INFO]: <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:51] [Client thread/INFO]: [CHAT] <Player952> 2
-[21:53:52] [Client thread/INFO]: Stopping!
-[21:53:52] [Server thread/INFO]: Stopping server
-[21:53:52] [Server thread/INFO]: Saving players
-[21:53:52] [Server thread/INFO]: Saving worlds
-[21:53:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
-[21:53:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
-[21:53:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:23:58] [main/INFO]: Setting user: Player380
+[22:23:58] [main/INFO]: (Session ID is token:0:Player380)
+[22:23:58] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:23:59] [Client thread/INFO]: Reloading ResourceManager: Default
+[22:23:59] [Sound Library Loader/INFO]: Sound engine started
+[22:24:00] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[22:24:00] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[22:24:01] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:24:01] [Server thread/INFO]: Generating keypair
+[22:24:01] [Server thread/INFO]: Preparing start region for level 0
+[22:24:02] [Server thread/INFO]: Changing view distance to 5, from 10
+[22:24:02] [Server thread/INFO]: Player380[local:E:4f893921] logged in with entity id 46 at (754.6742073654608, 71.0, 452.9500814284601)
+[22:24:02] [Server thread/INFO]: Player380 joined the game
+[22:24:04] [Server thread/INFO]: Saving and pausing game...
+[22:24:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:24:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:24:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:24:12] [Server thread/INFO]: Saving and pausing game...
+[22:24:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:24:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:24:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:24:15] [Server thread/INFO]: Saving and pausing game...
+[22:24:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:24:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:24:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:24:55] [Server thread/INFO]: Saving and pausing game...
+[22:24:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:24:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:24:55] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:25:04] [Server thread/INFO]: Saving and pausing game...
+[22:25:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:25:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:25:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:26:00] [Server thread/INFO]: Saving and pausing game...
+[22:26:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:26:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:26:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:27:28] [Server thread/INFO]: Saving and pausing game...
+[22:27:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:27:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:27:28] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:28:16] [Server thread/INFO]: Saving and pausing game...
+[22:28:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:28:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:28:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:29:09] [Server thread/INFO]: Saving and pausing game...
+[22:29:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:29:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:29:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:30:35] [Server thread/INFO]: Saving and pausing game...
+[22:30:35] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:30:35] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:30:35] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:31:04] [Server thread/INFO]: Saving and pausing game...
+[22:31:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:31:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:31:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:31:24] [Server thread/INFO]: Saving and pausing game...
+[22:31:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:31:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:31:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:31:30] [Server thread/INFO]: Stopping server
+[22:31:30] [Server thread/INFO]: Saving players
+[22:31:30] [Server thread/INFO]: Saving worlds
+[22:31:30] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:31:30] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:31:30] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:31:33] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:31:33] [Server thread/INFO]: Generating keypair
+[22:31:33] [Server thread/INFO]: Preparing start region for level 0
+[22:31:34] [Server thread/INFO]: Changing view distance to 5, from 10
+[22:31:34] [Server thread/INFO]: Player380[local:E:292327ae] logged in with entity id 1863 at (761.3719287362361, 71.0, 443.5634007618138)
+[22:31:34] [Server thread/INFO]: Player380 joined the game
+[22:31:34] [Server thread/INFO]: Saving and pausing game...
+[22:31:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:31:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:31:34] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:32:27] [Server thread/INFO]: Saving and pausing game...
+[22:32:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:32:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:32:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:32:41] [Server thread/INFO]: Saving and pausing game...
+[22:32:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:32:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:32:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:32:48] [Server thread/INFO]: Saving and pausing game...
+[22:32:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:32:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:32:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:33:09] [Server thread/INFO]: Saving and pausing game...
+[22:33:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:33:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:33:09] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:33:16] [Server thread/INFO]: Saving and pausing game...
+[22:33:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:33:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:33:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:33:31] [Server thread/INFO]: Saving and pausing game...
+[22:33:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:33:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:33:31] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:33:36] [Server thread/INFO]: Saving and pausing game...
+[22:33:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:33:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:33:36] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:33:41] [Server thread/INFO]: Stopping server
+[22:33:41] [Server thread/INFO]: Saving players
+[22:33:41] [Server thread/INFO]: Saving worlds
+[22:33:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:33:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:33:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:33:43] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:33:43] [Server thread/INFO]: Generating keypair
+[22:33:43] [Server thread/INFO]: Preparing start region for level 0
+[22:33:44] [Server thread/INFO]: Changing view distance to 5, from 10
+[22:33:44] [Server thread/INFO]: Player380[local:E:723c0546] logged in with entity id 2899 at (761.3719287362361, 71.0, 443.5634007618138)
+[22:33:44] [Server thread/INFO]: Player380 joined the game
+[22:33:44] [Server thread/INFO]: Saving and pausing game...
+[22:33:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:33:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:33:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:34:44] [Server thread/INFO]: Saving and pausing game...
+[22:34:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:34:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:34:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:35:00] [Server thread/INFO]: Saving and pausing game...
+[22:35:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:35:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:35:00] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:35:04] [Server thread/INFO]: Saving and pausing game...
+[22:35:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:35:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:35:04] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:35:41] [Server thread/INFO]: Saving and pausing game...
+[22:35:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:35:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:35:41] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:35:49] [Server thread/INFO]: Saving and pausing game...
+[22:35:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:35:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:35:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:35:49] [Server thread/INFO]: Saving and pausing game...
+[22:35:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:35:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:35:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:36:08] [Server thread/INFO]: Saving and pausing game...
+[22:36:08] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:36:08] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:36:08] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:36:12] [Server thread/INFO]: Saving and pausing game...
+[22:36:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:36:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:36:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:36:15] [Server thread/INFO]: Saving and pausing game...
+[22:36:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:36:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:36:15] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:36:22] [Server thread/INFO]: Saving and pausing game...
+[22:36:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:36:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:36:22] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:36:24] [Server thread/INFO]: Saving and pausing game...
+[22:36:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:36:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:36:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:36:32] [Server thread/INFO]: Saving and pausing game...
+[22:36:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:36:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:36:32] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:36:39] [Client thread/INFO]: [CHAT] Saved screenshot as 2019-05-14_22.36.39.png
+[22:37:24] [Server thread/INFO]: Saving and pausing game...
+[22:37:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:37:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:37:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:37:27] [Server thread/INFO]: Saving and pausing game...
+[22:37:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:37:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:37:27] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:37:48] [Server thread/INFO]: Saving and pausing game...
+[22:37:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:37:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:37:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:37:49] [Server thread/INFO]: Saving and pausing game...
+[22:37:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:37:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:37:49] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:37:51] [Server thread/INFO]: Saving and pausing game...
+[22:37:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:37:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:37:52] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:38:12] [Server thread/INFO]: Saving and pausing game...
+[22:38:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:38:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:38:12] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:38:13] [Server thread/INFO]: Saving and pausing game...
+[22:38:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:38:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:38:13] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:38:14] [Server thread/INFO]: Saving and pausing game...
+[22:38:14] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:38:14] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:38:14] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:38:46] [Server thread/INFO]: Saving and pausing game...
+[22:38:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:38:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:38:46] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:38:47] [Server thread/INFO]: Stopping server
+[22:38:47] [Server thread/INFO]: Saving players
+[22:38:47] [Server thread/INFO]: Saving worlds
+[22:38:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:38:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:38:47] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:38:49] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:38:49] [Server thread/INFO]: Generating keypair
+[22:38:49] [Server thread/INFO]: Preparing start region for level 0
+[22:38:49] [Server thread/INFO]: Changing view distance to 5, from 10
+[22:38:49] [Server thread/INFO]: Player380[local:E:79545a80] logged in with entity id 5930 at (757.8403654122408, 73.0, 444.87959180678206)
+[22:38:49] [Server thread/INFO]: Player380 joined the game
+[22:38:51] [Server thread/INFO]: Saving and pausing game...
+[22:38:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:38:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:38:51] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:39:18] [Server thread/INFO]: Saving and pausing game...
+[22:39:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:39:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:39:18] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:39:19] [Server thread/INFO]: Stopping server
+[22:39:19] [Server thread/INFO]: Saving players
+[22:39:19] [Server thread/INFO]: Saving worlds
+[22:39:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:39:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:39:19] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:39:23] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:39:23] [Server thread/INFO]: Generating keypair
+[22:39:23] [Server thread/INFO]: Preparing start region for level 0
+[22:39:23] [Server thread/INFO]: Changing view distance to 5, from 10
+[22:39:24] [Server thread/INFO]: Player380[local:E:9a6408ed] logged in with entity id 6297 at (757.8403654122408, 73.0, 444.87959180678206)
+[22:39:24] [Server thread/INFO]: Player380 joined the game
+[22:39:24] [Server thread/INFO]: Saving and pausing game...
+[22:39:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:39:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:39:24] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:39:26] [Server thread/INFO]: Stopping server
+[22:39:26] [Server thread/INFO]: Saving players
+[22:39:26] [Server thread/INFO]: Saving worlds
+[22:39:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:39:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:39:26] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:39:46] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:39:46] [Server thread/INFO]: Generating keypair
+[22:39:46] [Server thread/INFO]: Preparing start region for level 0
+[22:39:47] [Server thread/INFO]: Changing view distance to 5, from 10
+[22:39:47] [Server thread/INFO]: Player380[local:E:bf17b879] logged in with entity id 6551 at (757.8403654122408, 73.0, 444.87959180678206)
+[22:39:47] [Server thread/INFO]: Player380 joined the game
+[22:39:48] [Server thread/INFO]: Saving and pausing game...
+[22:39:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[22:39:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[22:39:48] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[22:39:54] [Server thread/INFO]: Player380 has just earned the achievement [Taking Inventory]
+[22:39:54] [Client thread/INFO]: [CHAT] Player380 has just earned the achievement [Taking Inventory]
