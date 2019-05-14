@@ -204,8 +204,6 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 	private void addSingleplayerMultiplayerButtons(int p_73969_1_, int p_73969_2_) {
 		this.buttonList.add(
 				new ButtonMainMenu(1, this.width / 2 - 100, p_73969_1_, I18n.format("menu.singleplayer", new Object[0])));
-		this.buttonList.add(
-				new ButtonMainMenu(2, this.width / 2 - 100, p_73969_1_, I18n.format("menu.singleplayer", new Object[0])));
 	}
 
 	/**

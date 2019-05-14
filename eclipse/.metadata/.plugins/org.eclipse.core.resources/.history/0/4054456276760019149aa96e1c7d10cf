@@ -1,0 +1,91 @@
+package fr.ow4rd.client.gui;
+
+
+import org.lwjgl.opengl.GL11;
+
+import fr.ow4rd.client.button.ButtonMainConnectCrossplay;
+import fr.ow4rd.client.button.ButtonMainConnectFaction;
+import fr.theshark34.swinger.textured.STexturedProgressBar;
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiMainMenu;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.network.NetworkManager;
+import net.minecraft.util.ResourceLocation;
+
+public class GuiConnectionQueue extends GuiScreen{
+	
+
+	private NetworkManager field_146371_g;
+	private final ResourceLocation backGround;
+	private int updateCounter;
+	String chargementText;
+	String serverName;
+	private static String title;
+	private static String texte;
+	private boolean field_146373_h;
+	private boolean canConnect;
+	private boolean error;
+    private STexturedProgressBar bar = new STexturedProgressBar(getResource("progress_void.png"), getResource("progress.png"));
+
+
+
+	public GuiConnectionQueue(GuiScreen current) {
+		this.backGround = new ResourceLocation("textures/ow4rd/gui/login_background.png");
+	}
+
+	@Override
+	public void initGui() {
+		final int var3 = this.height / 4 + 48;
+		this.addSingleplayerMultiplayerButtons(var3 + 20, 24);
+	}
+	
+	private void addSingleplayerMultiplayerButtons(final int p_73969_1_, final int p_73969_2_) {
+		this.buttonList.add(new ButtonMainConnectCrossplay(5, this.width / 2 - 120, this.height / 2 - 30, 80, 50, this.width / 2 - 20, this.height / 2 + 20,  ""));
+		this.buttonList.add(new ButtonMainConnectFaction(5, this.width / 2 + 20, this.height / 2 - 30, 100, 50, this.width / 2 + 120, this.height / 2 + 20,  ""));
+	}
+	
+	
+
+
+
+	public void drawBack() {
+		GL11.glViewport(0, 0, 256, 256);
+		this.mc.getTextureManager().bindTexture(this.backGround);
+		GL11.glViewport(0, 0, this.mc.displayWidth, this.mc.displayHeight);
+		final Tessellator tessellator = Tessellator.instance;
+		tessellator.startDrawingQuads();
+		GL11.glTexParameteri(3553, 10241, 9729);
+		GL11.glTexParameteri(3553, 10240, 9729);
+		tessellator.setColorRGBA_F(1.0f, 1.0f, 1.0f, 1.0f);
+		final int k = this.width;
+		final int l = this.height;
+		tessellator.addVertexWithUV(0.0, 0.0, zLevel, 0.0, 0.0);
+		tessellator.addVertexWithUV(0.0, l, zLevel, 0.0, 1.0);
+		tessellator.addVertexWithUV(k, l, zLevel, 1.0, 1.0);
+		tessellator.addVertexWithUV(k, 0.0, zLevel, 1.0, 0.0);
+		tessellator.draw();
+	}
+
+	@Override
+	public void drawScreen(final int par1, final int par2, final float par3) {
+
+
+		this.drawBack();
+		GL11.glEnable(GL11.GL_BLEND);
+	//	Gui.drawRect(this.width / 2 - 100, this.height / 2 - 30, this.width / 2 - 20, this.height / 2 + 20, new Color(51, 51, 51, 125).getRGB());
+	//	Gui.drawRect(this.width / 2 + 100, this.height / 2 - 30, this.width / 2 + 20, this.height / 2 + 20, new Color(51, 51, 51, 125).getRGB());
+
+
+		super.drawScreen(par1, par2, par3);
+	}
+
+	public void actionPerformed(final GuiButton button) {
+		if (button.id == 5) {
+			this.mc.displayGuiScreen(new GuiMainMenu());
+		}
+	}
+
+
+
+}

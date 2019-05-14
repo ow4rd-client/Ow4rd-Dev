@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Shadow"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value=", &quot;&quot;"/>
+			<item value=");"/>
+			<item value="));"/>
+			<item value="ublic void addInformation(I"/>
 			<item value="shadow"/>
 			<item value="shader"/>
 			<item value=""/>
@@ -18,11 +22,14 @@
 			<item value="Player"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value=", &quot;&quot;);"/>
+			<item value="), &quot;test&quot;, Items.);"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="616"/>
-		<item key="DIALOG_Y_ORIGIN" value="352"/>
+		<item key="DIALOG_X_ORIGIN" value="822"/>
+		<item key="DIALOG_Y_ORIGIN" value="509"/>
 		<item key="DIALOG_WIDTH" value="294"/>
 		<item key="DIALOG_HEIGHT" value="408"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>

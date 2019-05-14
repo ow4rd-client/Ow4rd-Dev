@@ -3,8 +3,8 @@ package fr.ow4rd.client.gui;
 
 import org.lwjgl.opengl.GL11;
 
-import fr.ow4rd.client.button.ButtonMainConnectFaction;
 import fr.ow4rd.client.button.ButtonMainConnectCrossplay;
+import fr.ow4rd.client.button.ButtonMainConnectFaction;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiMainMenu;
 import net.minecraft.client.gui.GuiScreen;
@@ -12,7 +12,7 @@ import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.util.ResourceLocation;
 
-public class GuiConnectionQueue extends GuiScreen{
+public class GuiConnectionQueue extends GuiScreen {
 	
 
 	private NetworkManager field_146371_g;
@@ -25,6 +25,7 @@ public class GuiConnectionQueue extends GuiScreen{
 	private boolean field_146373_h;
 	private boolean canConnect;
 	private boolean error;
+
 
 
 	public GuiConnectionQueue(GuiScreen current) {

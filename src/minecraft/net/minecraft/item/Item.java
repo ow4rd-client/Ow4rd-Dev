@@ -1,13 +1,19 @@
 package net.minecraft.item;
 
-import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Multimap;
-import com.google.common.collect.Sets;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 import java.util.UUID;
+
+import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;
+import com.google.common.collect.Sets;
+import com.mojang.realmsclient.gui.ChatFormatting;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
 import net.minecraft.block.BlockDoublePlant;
@@ -23,6 +29,7 @@ import net.minecraft.block.BlockStoneBrick;
 import net.minecraft.block.BlockWall;
 import net.minecraft.block.BlockWood;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
@@ -42,58 +49,58 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 
-public class Item
-{
-    public static final RegistryNamespaced itemRegistry = new RegistryNamespaced();
-    protected static final UUID field_111210_e = UUID.fromString("CB3F55D3-645C-4F38-A497-9C13A33DB5CF");
-    private CreativeTabs tabToDisplayOn;
+public class Item {
 
-    /** The RNG used by the Item subclasses. */
-    protected static Random itemRand = new Random();
+	public static final RegistryNamespaced itemRegistry = new RegistryNamespaced();
+	protected static final UUID field_111210_e = UUID.fromString("CB3F55D3-645C-4F38-A497-9C13A33DB5CF");
+	private CreativeTabs tabToDisplayOn;
 
-    /** Maximum size of the stack. */
-    protected int maxStackSize = 64;
+	/** The RNG used by the Item subclasses. */
+	protected static Random itemRand = new Random();
+	
+	public static HashMap<Item, String> desc = new HashMap<Item, String>();
 
-    /** Maximum damage an item can handle. */
-    private int maxDamage;
+	/** Maximum size of the stack. */
+	protected int maxStackSize = 64;
 
-    /** If true, render the object in full 3D, like weapons and tools. */
-    protected boolean bFull3D;
+	/** Maximum damage an item can handle. */
+	private int maxDamage;
 
-    /**
-     * Some items (like dyes) have multiple subtypes on same item, this is field define this behavior
-     */
-    protected boolean hasSubtypes;
-    private Item containerItem;
-    private String potionEffect;
+	/** If true, render the object in full 3D, like weapons and tools. */
+	protected boolean bFull3D;
 
-    /** The unlocalized name of this item. */
-    private String unlocalizedName;
+	/**
+	 * Some items (like dyes) have multiple subtypes on same item, this is field
+	 * define this behavior
+	 */
+	protected boolean hasSubtypes;
+	private Item containerItem;
+	private String potionEffect;
 
-    /** Icon index in the icons table. */
-    protected IIcon itemIcon;
+	/** The unlocalized name of this item. */
+	private String unlocalizedName;
 
-    /** The string associated with this Item's Icon. */
-    protected String iconString;
-    private static final String __OBFID = "CL_00000041";
+	/** Icon index in the icons table. */
+	protected IIcon itemIcon;
 
-    public static int getIdFromItem(Item p_150891_0_)
-    {
-        return p_150891_0_ == null ? 0 : itemRegistry.getIDForObject(p_150891_0_);
-    }
+	/** The string associated with this Item's Icon. */
+	protected String iconString;
+	private static final String __OBFID = "CL_00000041";
 
-    public static Item getItemById(int p_150899_0_)
-    {
-        return (Item)itemRegistry.getObjectForID(p_150899_0_);
-    }
+	public static int getIdFromItem(Item p_150891_0_) {
+		return p_150891_0_ == null ? 0 : itemRegistry.getIDForObject(p_150891_0_);
+	}
 
-    public static Item getItemFromBlock(Block p_150898_0_)
-    {
-        return getItemById(Block.getIdFromBlock(p_150898_0_));
-    }
+	public static Item getItemById(int p_150899_0_) {
+		return (Item) itemRegistry.getObjectForID(p_150899_0_);
+	}
 
-    public static void registerItems()
-    {
+	public static Item getItemFromBlock(Block p_150898_0_) {
+		return getItemById(Block.getIdFromBlock(p_150898_0_));
+	}
+
+	public static void registerItems() {
+		
         itemRegistry.addObject(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron").setTextureName("iron_shovel"));
         itemRegistry.addObject(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron").setTextureName("iron_pickaxe"));
         itemRegistry.addObject(258, "iron_axe", (new ItemAxe(Item.ToolMaterial.IRON)).setUnlocalizedName("hatchetIron").setTextureName("iron_axe"));
@@ -193,14 +200,13 @@ public class Item
         itemRegistry.addObject(351, "dye", (new ItemDye()).setUnlocalizedName("dyePowder").setTextureName("dye_powder"));
         itemRegistry.addObject(352, "bone", (new Item()).setUnlocalizedName("bone").setFull3D().setCreativeTab(CreativeTabs.tabMisc).setTextureName("bone"));
         itemRegistry.addObject(353, "sugar", (new Item()).setUnlocalizedName("sugar").setPotionEffect(PotionHelper.sugarEffect).setCreativeTab(CreativeTabs.tabMaterials).setTextureName("sugar"));
-        itemRegistry.addObject(354, "cake", (new ItemReed(Blocks.cake)).setMaxStackSize(1).setUnlocalizedName("cake").setCreativeTab(CreativeTabs.tabFood).setTextureName("cake"));
+        itemRegistry.addObject(354, "cake", (new ItemReed(Blocks.cake)).setMaxStackSize(1).setUnlocalizedName("cake").setTextureName("cake"));
         itemRegistry.addObject(355, "bed", (new ItemBed()).setMaxStackSize(1).setUnlocalizedName("bed").setTextureName("bed"));
         itemRegistry.addObject(356, "repeater", (new ItemReed(Blocks.unpowered_repeater)).setUnlocalizedName("diode").setCreativeTab(CreativeTabs.tabRedstone).setTextureName("repeater"));
         itemRegistry.addObject(357, "cookie", (new ItemFood(2, 0.1F, false)).setUnlocalizedName("cookie").setTextureName("cookie"));
         itemRegistry.addObject(358, "filled_map", (new ItemMap()).setUnlocalizedName("map").setTextureName("map_filled"));
         itemRegistry.addObject(359, "shears", (new ItemShears()).setUnlocalizedName("shears").setTextureName("shears"));
         itemRegistry.addObject(360, "melon", (new ItemFood(2, 0.3F, false)).setUnlocalizedName("melon").setTextureName("melon"));
-        itemRegistry.addObject(361, "pumpkin_seeds", (new ItemSeeds(Blocks.pumpkin_stem, Blocks.farmland)).setUnlocalizedName("seeds_pumpkin").setTextureName("seeds_pumpkin"));
         itemRegistry.addObject(362, "melon_seeds", (new ItemSeeds(Blocks.melon_stem, Blocks.farmland)).setUnlocalizedName("seeds_melon").setTextureName("seeds_melon"));
         itemRegistry.addObject(363, "beef", (new ItemFood(3, 0.3F, true)).setUnlocalizedName("beefRaw").setTextureName("beef_raw"));
         itemRegistry.addObject(364, "cooked_beef", (new ItemFood(8, 0.8F, true)).setUnlocalizedName("beefCooked").setTextureName("beef_cooked"));
@@ -239,7 +245,7 @@ public class Item
         itemRegistry.addObject(397, "skull", (new ItemSkull()).setUnlocalizedName("skull").setTextureName("skull"));
         itemRegistry.addObject(398, "carrot_on_a_stick", (new ItemCarrotOnAStick()).setUnlocalizedName("carrotOnAStick").setTextureName("carrot_on_a_stick"));
         itemRegistry.addObject(399, "nether_star", (new ItemSimpleFoiled()).setUnlocalizedName("netherStar").setCreativeTab(CreativeTabs.tabMaterials).setTextureName("nether_star"));
-        itemRegistry.addObject(400, "pumpkin_pie", (new ItemFood(8, 0.3F, false)).setUnlocalizedName("pumpkinPie").setCreativeTab(CreativeTabs.tabFood).setTextureName("pumpkin_pie"));
+        itemRegistry.addObject(400, "pumpkin_pie", (new ItemFood(8, 0.3F, false)).setUnlocalizedName("pumpkinPie").setTextureName("pumpkin_pie"));
         itemRegistry.addObject(401, "fireworks", (new ItemFirework()).setUnlocalizedName("fireworks").setTextureName("fireworks"));
         itemRegistry.addObject(402, "firework_charge", (new ItemFireworkCharge()).setUnlocalizedName("fireworksCharge").setCreativeTab(CreativeTabs.tabMisc).setTextureName("fireworks_charge"));
         itemRegistry.addObject(403, "enchanted_book", (new ItemEnchantedBook()).setMaxStackSize(1).setUnlocalizedName("enchantedBook").setTextureName("book_enchanted"));
@@ -266,6 +272,11 @@ public class Item
         itemRegistry.addObject(2265, "record_ward", (new ItemRecord("ward")).setUnlocalizedName("record").setTextureName("record_ward"));
         itemRegistry.addObject(2266, "record_11", (new ItemRecord("11")).setUnlocalizedName("record").setTextureName("record_11"));
         itemRegistry.addObject(2267, "record_wait", (new ItemRecord("wait")).setUnlocalizedName("record").setTextureName("record_wait"));
+        
+      // ItemsRegisters.registerItems();
+    	//ArmorRegister.registerArmor(3200);
+    	//ToolRegister.registerTool(3400);
+        
         HashSet var1 = Sets.newHashSet(new Block[] {Blocks.air, Blocks.brewing_stand, Blocks.bed, Blocks.nether_wart, Blocks.cauldron, Blocks.flower_pot, Blocks.wheat, Blocks.reeds, Blocks.cake, Blocks.skull, Blocks.piston_head, Blocks.piston_extension, Blocks.lit_redstone_ore, Blocks.powered_repeater, Blocks.pumpkin_stem, Blocks.standing_sign, Blocks.powered_comparator, Blocks.tripwire, Blocks.lit_redstone_lamp, Blocks.melon_stem, Blocks.unlit_redstone_torch, Blocks.unpowered_comparator, Blocks.redstone_wire, Blocks.wall_sign, Blocks.unpowered_repeater, Blocks.iron_door, Blocks.wooden_door});
         Iterator var2 = Block.blockRegistry.getKeys().iterator();
 
@@ -415,497 +426,484 @@ public class Item
 
             itemRegistry.addObject(Block.getIdFromBlock(var4), var3, var5);
         }
+        
+        //TODO: desc
+        String newLine = System.getProperty("line.separator");
+		desc.put(Items.apple, ChatFormatting.AQUA + ".-_TG");
+		desc.put(Items.arrow, "t");
     }
 
-    public Item setMaxStackSize(int p_77625_1_)
-    {
-        this.maxStackSize = p_77625_1_;
-        return this;
-    }
-
-    /**
-     * Returns 0 for /terrain.png, 1 for /gui/items.png
-     */
-    public int getSpriteNumber()
-    {
-        return 1;
-    }
-
-    /**
-     * Gets an icon index based on an item's damage value
-     */
-    public IIcon getIconFromDamage(int p_77617_1_)
-    {
-        return this.itemIcon;
-    }
-
-    /**
-     * Returns the icon index of the stack given as argument.
-     */
-    public final IIcon getIconIndex(ItemStack p_77650_1_)
-    {
-        return this.getIconFromDamage(p_77650_1_.getItemDamage());
-    }
-
-    /**
-     * Callback for item usage. If the item does something special on right clicking, he will have one of those. Return
-     * True if something happen and false if it don't. This is for ITEMS, not BLOCKS
-     */
-    public boolean onItemUse(ItemStack p_77648_1_, EntityPlayer p_77648_2_, World p_77648_3_, int p_77648_4_, int p_77648_5_, int p_77648_6_, int p_77648_7_, float p_77648_8_, float p_77648_9_, float p_77648_10_)
-    {
-        return false;
-    }
-
-    public float func_150893_a(ItemStack p_150893_1_, Block p_150893_2_)
-    {
-        return 1.0F;
-    }
-
-    /**
-     * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-     */
-    public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, EntityPlayer p_77659_3_)
-    {
-        return p_77659_1_;
-    }
-
-    public ItemStack onEaten(ItemStack p_77654_1_, World p_77654_2_, EntityPlayer p_77654_3_)
-    {
-        return p_77654_1_;
-    }
-
-    /**
-     * Returns the maximum size of the stack for a specific item.
-     */
-    public int getItemStackLimit()
-    {
-        return this.maxStackSize;
-    }
-
-    /**
-     * Returns the metadata of the block which this Item (ItemBlock) can place
-     */
-    public int getMetadata(int p_77647_1_)
-    {
-        return 0;
-    }
-
-    public boolean getHasSubtypes()
-    {
-        return this.hasSubtypes;
-    }
-
-    protected Item setHasSubtypes(boolean p_77627_1_)
-    {
-        this.hasSubtypes = p_77627_1_;
-        return this;
-    }
-
-    /**
-     * Returns the maximum damage an item can take.
-     */
-    public int getMaxDamage()
-    {
-        return this.maxDamage;
-    }
-
-    /**
-     * set max damage of an Item
-     */
-    protected Item setMaxDamage(int p_77656_1_)
-    {
-        this.maxDamage = p_77656_1_;
-        return this;
-    }
-
-    public boolean isDamageable()
-    {
-        return this.maxDamage > 0 && !this.hasSubtypes;
-    }
-
-    /**
-     * Current implementations of this method in child classes do not use the entry argument beside ev. They just raise
-     * the damage on the stack.
-     */
-    public boolean hitEntity(ItemStack p_77644_1_, EntityLivingBase p_77644_2_, EntityLivingBase p_77644_3_)
-    {
-        return false;
-    }
-
-    public boolean onBlockDestroyed(ItemStack p_150894_1_, World p_150894_2_, Block p_150894_3_, int p_150894_4_, int p_150894_5_, int p_150894_6_, EntityLivingBase p_150894_7_)
-    {
-        return false;
-    }
-
-    public boolean func_150897_b(Block p_150897_1_)
-    {
-        return false;
-    }
-
-    /**
-     * Returns true if the item can be used on the given entity, e.g. shears on sheep.
-     */
-    public boolean itemInteractionForEntity(ItemStack p_111207_1_, EntityPlayer p_111207_2_, EntityLivingBase p_111207_3_)
-    {
-        return false;
-    }
-
-    /**
-     * Sets bFull3D to True and return the object.
-     */
-    public Item setFull3D()
-    {
-        this.bFull3D = true;
-        return this;
-    }
-
-    /**
-     * Returns True is the item is renderer in full 3D when hold.
-     */
-    public boolean isFull3D()
-    {
-        return this.bFull3D;
-    }
-
-    /**
-     * Returns true if this item should be rotated by 180 degrees around the Y axis when being held in an entities
-     * hands.
-     */
-    public boolean shouldRotateAroundWhenRendering()
-    {
-        return false;
-    }
-
-    /**
-     * Sets the unlocalized name of this item to the string passed as the parameter, prefixed by "item."
-     */
-    public Item setUnlocalizedName(String p_77655_1_)
-    {
-        this.unlocalizedName = p_77655_1_;
-        return this;
-    }
-
-    /**
-     * Translates the unlocalized name of this item, but without the .name suffix, so the translation fails and the
-     * unlocalized name itself is returned.
-     */
-    public String getUnlocalizedNameInefficiently(ItemStack p_77657_1_)
-    {
-        String var2 = this.getUnlocalizedName(p_77657_1_);
-        return var2 == null ? "" : StatCollector.translateToLocal(var2);
-    }
-
-    /**
-     * Returns the unlocalized name of this item.
-     */
-    public String getUnlocalizedName()
-    {
-        return "item." + this.unlocalizedName;
-    }
-
-    /**
-     * Returns the unlocalized name of this item. This version accepts an ItemStack so different stacks can have
-     * different names based on their damage or NBT.
-     */
-    public String getUnlocalizedName(ItemStack p_77667_1_)
-    {
-        return "item." + this.unlocalizedName;
-    }
-
-    public Item setContainerItem(Item p_77642_1_)
-    {
-        this.containerItem = p_77642_1_;
-        return this;
-    }
-
-    /**
-     * If this returns true, after a recipe involving this item is crafted the container item will be added to the
-     * player's inventory instead of remaining in the crafting grid.
-     */
-    public boolean doesContainerItemLeaveCraftingGrid(ItemStack p_77630_1_)
-    {
-        return true;
-    }
-
-    /**
-     * If this function returns true (or the item is damageable), the ItemStack's NBT tag will be sent to the client.
-     */
-    public boolean getShareTag()
-    {
-        return true;
-    }
-
-    public Item getContainerItem()
-    {
-        return this.containerItem;
-    }
-
-    /**
-     * True if this Item has a container item (a.k.a. crafting result)
-     */
-    public boolean hasContainerItem()
-    {
-        return this.containerItem != null;
-    }
-
-    public int getColorFromItemStack(ItemStack p_82790_1_, int p_82790_2_)
-    {
-        return 16777215;
-    }
-
-    /**
-     * Called each tick as long the item is on a player inventory. Uses by maps to check if is on a player hand and
-     * update it's contents.
-     */
-    public void onUpdate(ItemStack p_77663_1_, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_) {}
-
-    /**
-     * Called when item is crafted/smelted. Used only by maps so far.
-     */
-    public void onCreated(ItemStack p_77622_1_, World p_77622_2_, EntityPlayer p_77622_3_) {}
-
-    /**
-     * false for all Items except sub-classes of ItemMapBase
-     */
-    public boolean isMap()
-    {
-        return false;
-    }
-
-    /**
-     * returns the action that specifies what animation to play when the items is being used
-     */
-    public EnumAction getItemUseAction(ItemStack p_77661_1_)
-    {
-        return EnumAction.none;
-    }
-
-    /**
-     * How long it takes to use or consume an item
-     */
-    public int getMaxItemUseDuration(ItemStack p_77626_1_)
-    {
-        return 0;
-    }
-
-    /**
-     * called when the player releases the use item button. Args: itemstack, world, entityplayer, itemInUseCount
-     */
-    public void onPlayerStoppedUsing(ItemStack p_77615_1_, World p_77615_2_, EntityPlayer p_77615_3_, int p_77615_4_) {}
-
-    /**
-     * Sets the string representing this item's effect on a potion when used as an ingredient.
-     */
-    protected Item setPotionEffect(String p_77631_1_)
-    {
-        this.potionEffect = p_77631_1_;
-        return this;
-    }
-
-    public String getPotionEffect(ItemStack p_150896_1_)
-    {
-        return this.potionEffect;
-    }
-
-    public boolean isPotionIngredient(ItemStack p_150892_1_)
-    {
-        return this.getPotionEffect(p_150892_1_) != null;
-    }
-
-    /**
-     * allows items to add custom lines of information to the mouseover description
-     */
-    public void addInformation(ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_) {}
-
-    public String getItemStackDisplayName(ItemStack p_77653_1_)
-    {
-        return ("" + StatCollector.translateToLocal(this.getUnlocalizedNameInefficiently(p_77653_1_) + ".name")).trim();
-    }
-
-    public boolean hasEffect(ItemStack p_77636_1_)
-    {
-        return p_77636_1_.isItemEnchanted();
-    }
-
-    /**
-     * Return an item rarity from EnumRarity
-     */
-    public EnumRarity getRarity(ItemStack p_77613_1_)
-    {
-        return p_77613_1_.isItemEnchanted() ? EnumRarity.rare : EnumRarity.common;
-    }
-
-    /**
-     * Checks isDamagable and if it cannot be stacked
-     */
-    public boolean isItemTool(ItemStack p_77616_1_)
-    {
-        return this.getItemStackLimit() == 1 && this.isDamageable();
-    }
-
-    protected MovingObjectPosition getMovingObjectPositionFromPlayer(World p_77621_1_, EntityPlayer p_77621_2_, boolean p_77621_3_)
-    {
-        float var4 = 1.0F;
-        float var5 = p_77621_2_.prevRotationPitch + (p_77621_2_.rotationPitch - p_77621_2_.prevRotationPitch) * var4;
-        float var6 = p_77621_2_.prevRotationYaw + (p_77621_2_.rotationYaw - p_77621_2_.prevRotationYaw) * var4;
-        double var7 = p_77621_2_.prevPosX + (p_77621_2_.posX - p_77621_2_.prevPosX) * (double)var4;
-        double var9 = p_77621_2_.prevPosY + (p_77621_2_.posY - p_77621_2_.prevPosY) * (double)var4 + 1.62D - (double)p_77621_2_.yOffset;
-        double var11 = p_77621_2_.prevPosZ + (p_77621_2_.posZ - p_77621_2_.prevPosZ) * (double)var4;
-        Vec3 var13 = Vec3.createVectorHelper(var7, var9, var11);
-        float var14 = MathHelper.cos(-var6 * 0.017453292F - (float)Math.PI);
-        float var15 = MathHelper.sin(-var6 * 0.017453292F - (float)Math.PI);
-        float var16 = -MathHelper.cos(-var5 * 0.017453292F);
-        float var17 = MathHelper.sin(-var5 * 0.017453292F);
-        float var18 = var15 * var16;
-        float var20 = var14 * var16;
-        double var21 = 5.0D;
-        Vec3 var23 = var13.addVector((double)var18 * var21, (double)var17 * var21, (double)var20 * var21);
-        return p_77621_1_.func_147447_a(var13, var23, p_77621_3_, !p_77621_3_, false);
-    }
-
-    /**
-     * Return the enchantability factor of the item, most of the time is based on material.
-     */
-    public int getItemEnchantability()
-    {
-        return 0;
-    }
-
-    public boolean requiresMultipleRenderPasses()
-    {
-        return false;
-    }
-
-    /**
-     * Gets an icon index based on an item's damage value and the given render pass
-     */
-    public IIcon getIconFromDamageForRenderPass(int p_77618_1_, int p_77618_2_)
-    {
-        return this.getIconFromDamage(p_77618_1_);
-    }
-
-    /**
-     * This returns the sub items
-     */
-    public void getSubItems(Item p_150895_1_, CreativeTabs p_150895_2_, List p_150895_3_)
-    {
-        p_150895_3_.add(new ItemStack(p_150895_1_, 1, 0));
-    }
-
-    /**
-     * gets the CreativeTab this item is displayed on
-     */
-    public CreativeTabs getCreativeTab()
-    {
-        return this.tabToDisplayOn;
-    }
-
-    /**
-     * returns this;
-     */
-    public Item setCreativeTab(CreativeTabs p_77637_1_)
-    {
-        this.tabToDisplayOn = p_77637_1_;
-        return this;
-    }
-
-    /**
-     * Returns true if players can use this item to affect the world (e.g. placing blocks, placing ender eyes in portal)
-     * when not in creative
-     */
-    public boolean canItemEditBlocks()
-    {
-        return true;
-    }
-
-    /**
-     * Return whether this item is repairable in an anvil.
-     */
-    public boolean getIsRepairable(ItemStack p_82789_1_, ItemStack p_82789_2_)
-    {
-        return false;
-    }
-
-    public void registerIcons(IIconRegister p_94581_1_)
-    {
-        this.itemIcon = p_94581_1_.registerIcon(this.getIconString());
-    }
-
-    /**
-     * Gets a map of item attribute modifiers, used by ItemSword to increase hit damage.
-     */
-    public Multimap getItemAttributeModifiers()
-    {
-        return HashMultimap.create();
-    }
-
-    protected Item setTextureName(String p_111206_1_)
-    {
-        this.iconString = p_111206_1_;
-        return this;
-    }
-
-    /**
-     * Returns the string associated with this Item's Icon.
-     */
-    protected String getIconString()
-    {
-        return this.iconString == null ? "MISSING_ICON_ITEM_" + itemRegistry.getIDForObject(this) + "_" + this.unlocalizedName : this.iconString;
-    }
-
-    public static enum ToolMaterial
-    {
-        WOOD("WOOD", 0, 0, 59, 2.0F, 0.0F, 15),
-        STONE("STONE", 1, 1, 131, 4.0F, 1.0F, 5),
-        IRON("IRON", 2, 2, 250, 6.0F, 2.0F, 14),
-        EMERALD("EMERALD", 3, 3, 1561, 8.0F, 3.0F, 10),
-        GOLD("GOLD", 4, 0, 32, 12.0F, 0.0F, 22);
-        private final int harvestLevel;
-        private final int maxUses;
-        private final float efficiencyOnProperMaterial;
-        private final float damageVsEntity;
-        private final int enchantability;
-
-        private static final Item.ToolMaterial[] $VALUES = new Item.ToolMaterial[]{WOOD, STONE, IRON, EMERALD, GOLD};
-        private static final String __OBFID = "CL_00000042";
-
-        private ToolMaterial(String p_i1874_1_, int p_i1874_2_, int p_i1874_3_, int p_i1874_4_, float p_i1874_5_, float p_i1874_6_, int p_i1874_7_)
-        {
-            this.harvestLevel = p_i1874_3_;
-            this.maxUses = p_i1874_4_;
-            this.efficiencyOnProperMaterial = p_i1874_5_;
-            this.damageVsEntity = p_i1874_6_;
-            this.enchantability = p_i1874_7_;
-        }
-
-        public int getMaxUses()
-        {
-            return this.maxUses;
-        }
-
-        public float getEfficiencyOnProperMaterial()
-        {
-            return this.efficiencyOnProperMaterial;
-        }
-
-        public float getDamageVsEntity()
-        {
-            return this.damageVsEntity;
-        }
-
-        public int getHarvestLevel()
-        {
-            return this.harvestLevel;
-        }
-
-        public int getEnchantability()
-        {
-            return this.enchantability;
-        }
-
-        public Item func_150995_f()
-        {
-            return this == WOOD ? Item.getItemFromBlock(Blocks.planks) : (this == STONE ? Item.getItemFromBlock(Blocks.cobblestone) : (this == GOLD ? Items.gold_ingot : (this == IRON ? Items.iron_ingot : (this == EMERALD ? Items.diamond : null))));
-        }
-    }
+	public Item setMaxStackSize(int p_77625_1_) {
+		this.maxStackSize = p_77625_1_;
+		return this;
+	}
+
+	/**
+	 * Returns 0 for /terrain.png, 1 for /gui/items.png
+	 */
+	public int getSpriteNumber() {
+		return 1;
+	}
+
+	/**
+	 * Gets an icon index based on an item's damage value
+	 */
+	public IIcon getIconFromDamage(int p_77617_1_) {
+		return this.itemIcon;
+	}
+
+	/**
+	 * Returns the icon index of the stack given as argument.
+	 */
+	public final IIcon getIconIndex(ItemStack p_77650_1_) {
+		return this.getIconFromDamage(p_77650_1_.getItemDamage());
+	}
+
+	/**
+	 * Callback for item usage. If the item does something special on right
+	 * clicking, he will have one of those. Return True if something happen and
+	 * false if it don't. This is for ITEMS, not BLOCKS
+	 */
+	public boolean onItemUse(ItemStack p_77648_1_, EntityPlayer p_77648_2_, World p_77648_3_, int p_77648_4_,
+			int p_77648_5_, int p_77648_6_, int p_77648_7_, float p_77648_8_, float p_77648_9_, float p_77648_10_) {
+		return false;
+	}
+
+	public float func_150893_a(ItemStack p_150893_1_, Block p_150893_2_) {
+		return 1.0F;
+	}
+
+	/**
+	 * Called whenever this item is equipped and the right mouse button is pressed.
+	 * Args: itemStack, world, entityPlayer
+	 */
+	public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, EntityPlayer p_77659_3_) {
+		return p_77659_1_;
+	}
+
+	public ItemStack onEaten(ItemStack p_77654_1_, World p_77654_2_, EntityPlayer p_77654_3_) {
+		return p_77654_1_;
+	}
+
+	/**
+	 * Returns the maximum size of the stack for a specific item.
+	 */
+	public int getItemStackLimit() {
+		return this.maxStackSize;
+	}
+
+	/**
+	 * Returns the metadata of the block which this Item (ItemBlock) can place
+	 */
+	public int getMetadata(int p_77647_1_) {
+		return 0;
+	}
+
+	public boolean getHasSubtypes() {
+		return this.hasSubtypes;
+	}
+
+	protected Item setHasSubtypes(boolean p_77627_1_) {
+		this.hasSubtypes = p_77627_1_;
+		return this;
+	}
+
+	/**
+	 * Returns the maximum damage an item can take.
+	 */
+	public int getMaxDamage() {
+		return this.maxDamage;
+	}
+
+	/**
+	 * set max damage of an Item
+	 */
+	protected Item setMaxDamage(int p_77656_1_) {
+		this.maxDamage = p_77656_1_;
+		return this;
+	}
+
+	public boolean isDamageable() {
+		return this.maxDamage > 0 && !this.hasSubtypes;
+	}
+
+	/**
+	 * Current implementations of this method in child classes do not use the entry
+	 * argument beside ev. They just raise the damage on the stack.
+	 */
+	public boolean hitEntity(ItemStack p_77644_1_, EntityLivingBase p_77644_2_, EntityLivingBase p_77644_3_) {
+		return false;
+	}
+
+	public boolean onBlockDestroyed(ItemStack p_150894_1_, World p_150894_2_, Block p_150894_3_, int p_150894_4_,
+			int p_150894_5_, int p_150894_6_, EntityLivingBase p_150894_7_) {
+		return false;
+	}
+
+	public boolean func_150897_b(Block p_150897_1_) {
+		return false;
+	}
+
+	/**
+	 * Returns true if the item can be used on the given entity, e.g. shears on
+	 * sheep.
+	 */
+	public boolean itemInteractionForEntity(ItemStack p_111207_1_, EntityPlayer p_111207_2_,
+			EntityLivingBase p_111207_3_) {
+		return false;
+	}
+
+	/**
+	 * Sets bFull3D to True and return the object.
+	 */
+	public Item setFull3D() {
+		this.bFull3D = true;
+		return this;
+	}
+
+	/**
+	 * Returns True is the item is renderer in full 3D when hold.
+	 */
+	public boolean isFull3D() {
+		return this.bFull3D;
+	}
+
+	/**
+	 * Returns true if this item should be rotated by 180 degrees around the Y axis
+	 * when being held in an entities hands.
+	 */
+	public boolean shouldRotateAroundWhenRendering() {
+		return false;
+	}
+
+	/**
+	 * Sets the unlocalized name of this item to the string passed as the parameter,
+	 * prefixed by "item."
+	 */
+	public Item setUnlocalizedName(String p_77655_1_) {
+		this.unlocalizedName = p_77655_1_;
+		return this;
+	}
+
+	/**
+	 * Translates the unlocalized name of this item, but without the .name suffix,
+	 * so the translation fails and the unlocalized name itself is returned.
+	 */
+	public String getUnlocalizedNameInefficiently(ItemStack p_77657_1_) {
+		String var2 = this.getUnlocalizedName(p_77657_1_);
+		return var2 == null ? "" : StatCollector.translateToLocal(var2);
+	}
+
+	/**
+	 * Returns the unlocalized name of this item.
+	 */
+	public String getUnlocalizedName() {
+		return "item." + this.unlocalizedName;
+	}
+
+	/**
+	 * Returns the unlocalized name of this item. This version accepts an ItemStack
+	 * so different stacks can have different names based on their damage or NBT.
+	 */
+	public String getUnlocalizedName(ItemStack p_77667_1_) {
+		return "item." + this.unlocalizedName;
+	}
+
+	public Item setContainerItem(Item p_77642_1_) {
+		this.containerItem = p_77642_1_;
+		return this;
+	}
+
+	/**
+	 * If this returns true, after a recipe involving this item is crafted the
+	 * container item will be added to the player's inventory instead of remaining
+	 * in the crafting grid.
+	 */
+	public boolean doesContainerItemLeaveCraftingGrid(ItemStack p_77630_1_) {
+		return true;
+	}
+
+	/**
+	 * If this function returns true (or the item is damageable), the ItemStack's
+	 * NBT tag will be sent to the client.
+	 */
+	public boolean getShareTag() {
+		return true;
+	}
+
+	public Item getContainerItem() {
+		return this.containerItem;
+	}
+
+	/**
+	 * True if this Item has a container item (a.k.a. crafting result)
+	 */
+	public boolean hasContainerItem() {
+		return this.containerItem != null;
+	}
+
+	public int getColorFromItemStack(ItemStack p_82790_1_, int p_82790_2_) {
+		return 16777215;
+	}
+
+	/**
+	 * Called each tick as long the item is on a player inventory. Uses by maps to
+	 * check if is on a player hand and update it's contents.
+	 */
+	public void onUpdate(ItemStack p_77663_1_, World p_77663_2_, Entity p_77663_3_, int p_77663_4_,
+			boolean p_77663_5_) {
+	}
+
+	/**
+	 * Called when item is crafted/smelted. Used only by maps so far.
+	 */
+	public void onCreated(ItemStack p_77622_1_, World p_77622_2_, EntityPlayer p_77622_3_) {
+	}
+
+	/**
+	 * false for all Items except sub-classes of ItemMapBase
+	 */
+	public boolean isMap() {
+		return false;
+	}
+
+	/**
+	 * returns the action that specifies what animation to play when the items is
+	 * being used
+	 */
+	public EnumAction getItemUseAction(ItemStack p_77661_1_) {
+		return EnumAction.none;
+	}
+
+	/**
+	 * How long it takes to use or consume an item
+	 */
+	public int getMaxItemUseDuration(ItemStack p_77626_1_) {
+		return 0;
+	}
+
+	/**
+	 * called when the player releases the use item button. Args: itemstack, world,
+	 * entityplayer, itemInUseCount
+	 */
+	public void onPlayerStoppedUsing(ItemStack p_77615_1_, World p_77615_2_, EntityPlayer p_77615_3_, int p_77615_4_) {
+	}
+
+	/**
+	 * Sets the string representing this item's effect on a potion when used as an
+	 * ingredient.
+	 */
+	protected Item setPotionEffect(String p_77631_1_) {
+		this.potionEffect = p_77631_1_;
+		return this;
+	}
+
+	public String getPotionEffect(ItemStack p_150896_1_) {
+		return this.potionEffect;
+	}
+
+	public boolean isPotionIngredient(ItemStack p_150892_1_) {
+		return this.getPotionEffect(p_150892_1_) != null;
+	}
+
+	/**
+	 * allows items to add custom lines of information to the mouseover description
+	 */
+
+	public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
+		System.out.println(desc.size() + "");
+		Set set2 = desc.entrySet();
+		Iterator iterator2 = set2.iterator();
+		while (iterator2.hasNext()) {
+			Map.Entry mentry2 = (Map.Entry)iterator2.next();
+			if (par1ItemStack.getItem().equals(mentry2.getKey())) {
+				if (Minecraft.getMinecraft().gameSettings.isKeyDown(Minecraft.getMinecraft().gameSettings.keyBindSneak)) {
+				par3List.add(mentry2.getValue());
+				}else {
+					par3List.add("Appuyez sur "
+							+ Minecraft.getMinecraft().gameSettings.getKeyDisplayString(
+									Minecraft.getMinecraft().gameSettings.keyBindSneak.getKeyCode())
+							+ " pour voir la description"); // si la touche LSHIFT n'est pas pressée alors on affiche
+															// ceci
+			}
+
+		}
+		}
+
+	}
+
+	public String getItemStackDisplayName(ItemStack p_77653_1_) {
+		return ("" + StatCollector.translateToLocal(this.getUnlocalizedNameInefficiently(p_77653_1_) + ".name")).trim();
+	}
+
+	public boolean hasEffect(ItemStack p_77636_1_) {
+		return p_77636_1_.isItemEnchanted();
+	}
+
+	/**
+	 * Return an item rarity from EnumRarity
+	 */
+	public EnumRarity getRarity(ItemStack p_77613_1_) {
+		return p_77613_1_.isItemEnchanted() ? EnumRarity.rare : EnumRarity.common;
+	}
+
+	/**
+	 * Checks isDamagable and if it cannot be stacked
+	 */
+	public boolean isItemTool(ItemStack p_77616_1_) {
+		return this.getItemStackLimit() == 1 && this.isDamageable();
+	}
+
+	protected MovingObjectPosition getMovingObjectPositionFromPlayer(World p_77621_1_, EntityPlayer p_77621_2_,
+			boolean p_77621_3_) {
+		float var4 = 1.0F;
+		float var5 = p_77621_2_.prevRotationPitch + (p_77621_2_.rotationPitch - p_77621_2_.prevRotationPitch) * var4;
+		float var6 = p_77621_2_.prevRotationYaw + (p_77621_2_.rotationYaw - p_77621_2_.prevRotationYaw) * var4;
+		double var7 = p_77621_2_.prevPosX + (p_77621_2_.posX - p_77621_2_.prevPosX) * (double) var4;
+		double var9 = p_77621_2_.prevPosY + (p_77621_2_.posY - p_77621_2_.prevPosY) * (double) var4 + 1.62D
+				- (double) p_77621_2_.yOffset;
+		double var11 = p_77621_2_.prevPosZ + (p_77621_2_.posZ - p_77621_2_.prevPosZ) * (double) var4;
+		Vec3 var13 = Vec3.createVectorHelper(var7, var9, var11);
+		float var14 = MathHelper.cos(-var6 * 0.017453292F - (float) Math.PI);
+		float var15 = MathHelper.sin(-var6 * 0.017453292F - (float) Math.PI);
+		float var16 = -MathHelper.cos(-var5 * 0.017453292F);
+		float var17 = MathHelper.sin(-var5 * 0.017453292F);
+		float var18 = var15 * var16;
+		float var20 = var14 * var16;
+		double var21 = 5.0D;
+		Vec3 var23 = var13.addVector((double) var18 * var21, (double) var17 * var21, (double) var20 * var21);
+		return p_77621_1_.func_147447_a(var13, var23, p_77621_3_, !p_77621_3_, false);
+	}
+
+	/**
+	 * Return the enchantability factor of the item, most of the time is based on
+	 * material.
+	 */
+	public int getItemEnchantability() {
+		return 0;
+	}
+
+	public boolean requiresMultipleRenderPasses() {
+		return false;
+	}
+
+	/**
+	 * Gets an icon index based on an item's damage value and the given render pass
+	 */
+	public IIcon getIconFromDamageForRenderPass(int p_77618_1_, int p_77618_2_) {
+		return this.getIconFromDamage(p_77618_1_);
+	}
+
+	/**
+	 * This returns the sub items
+	 */
+	public void getSubItems(Item p_150895_1_, CreativeTabs p_150895_2_, List p_150895_3_) {
+		p_150895_3_.add(new ItemStack(p_150895_1_, 1, 0));
+	}
+
+	/**
+	 * gets the CreativeTab this item is displayed on
+	 */
+	public CreativeTabs getCreativeTab() {
+		return this.tabToDisplayOn;
+	}
+
+	/**
+	 * returns this;
+	 */
+	public Item setCreativeTab(CreativeTabs p_77637_1_) {
+		this.tabToDisplayOn = p_77637_1_;
+		return this;
+	}
+
+	/**
+	 * Returns true if players can use this item to affect the world (e.g. placing
+	 * blocks, placing ender eyes in portal) when not in creative
+	 */
+	public boolean canItemEditBlocks() {
+		return true;
+	}
+
+	/**
+	 * Return whether this item is repairable in an anvil.
+	 */
+	public boolean getIsRepairable(ItemStack p_82789_1_, ItemStack p_82789_2_) {
+		return false;
+	}
+
+	public void registerIcons(IIconRegister p_94581_1_) {
+		this.itemIcon = p_94581_1_.registerIcon(this.getIconString());
+	}
+
+	/**
+	 * Gets a map of item attribute modifiers, used by ItemSword to increase hit
+	 * damage.
+	 */
+	public Multimap getItemAttributeModifiers() {
+		return HashMultimap.create();
+	}
+
+	protected Item setTextureName(String p_111206_1_) {
+		this.iconString = p_111206_1_;
+		return this;
+	}
+
+	/**
+	 * Returns the string associated with this Item's Icon.
+	 */
+	protected String getIconString() {
+		return this.iconString == null
+				? "MISSING_ICON_ITEM_" + itemRegistry.getIDForObject(this) + "_" + this.unlocalizedName
+				: this.iconString;
+	}
+
+	public static enum ToolMaterial {
+		WOOD("WOOD", 0, 0, 59, 2.0F, 0.0F, 15), STONE("STONE", 1, 1, 131, 4.0F, 1.0F, 5),
+		IRON("IRON", 2, 2, 250, 6.0F, 2.0F, 14), EMERALD("EMERALD", 3, 3, 1561, 8.0F, 3.0F, 10),
+		GOLD("GOLD", 4, 0, 32, 12.0F, 0.0F, 22);
+		private final int harvestLevel;
+		private final int maxUses;
+		private final float efficiencyOnProperMaterial;
+		private final float damageVsEntity;
+		private final int enchantability;
+
+		private static final Item.ToolMaterial[] $VALUES = new Item.ToolMaterial[] { WOOD, STONE, IRON, EMERALD, GOLD };
+		private static final String __OBFID = "CL_00000042";
+
+		private ToolMaterial(String p_i1874_1_, int p_i1874_2_, int p_i1874_3_, int p_i1874_4_, float p_i1874_5_,
+				float p_i1874_6_, int p_i1874_7_) {
+			this.harvestLevel = p_i1874_3_;
+			this.maxUses = p_i1874_4_;
+			this.efficiencyOnProperMaterial = p_i1874_5_;
+			this.damageVsEntity = p_i1874_6_;
+			this.enchantability = p_i1874_7_;
+		}
+
+		public int getMaxUses() {
+			return this.maxUses;
+		}
+
+		public float getEfficiencyOnProperMaterial() {
+			return this.efficiencyOnProperMaterial;
+		}
+
+		public float getDamageVsEntity() {
+			return this.damageVsEntity;
+		}
+
+		public int getHarvestLevel() {
+			return this.harvestLevel;
+		}
+
+		public int getEnchantability() {
+			return this.enchantability;
+		}
+
+		public Item func_150995_f() {
+			return this == WOOD ? Item.getItemFromBlock(Blocks.planks)
+					: (this == STONE ? Item.getItemFromBlock(Blocks.cobblestone)
+							: (this == GOLD ? Items.gold_ingot
+									: (this == IRON ? Items.iron_ingot : (this == EMERALD ? Items.diamond : null))));
+		}
+	}
 }
