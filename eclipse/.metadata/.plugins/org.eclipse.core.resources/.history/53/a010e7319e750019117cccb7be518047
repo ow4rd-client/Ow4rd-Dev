@@ -1,0 +1,11 @@
+package fr.ow4rd.client.gui;
+
+import java.util.HashMap;
+
+import fr.ow4rd.client.queue.queues.Queue;
+
+public class LoadingScreen {
+	
+	public HashMap<String, Queue> queues = new HashMap<String, Queue>();
+
+}

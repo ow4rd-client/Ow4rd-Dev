@@ -1,0 +1,5 @@
+package fr.ow4rd.client.queue.queues;
+
+public class QueuesRunnable {
+
+}

@@ -1,0 +1,48 @@
+package fr.ow4rd.client.queue.queues;
+
+import java.util.ArrayList;
+
+import fr.ow4rd.client.gui.LoadingScreen;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityClientPlayerMP;
+import net.minecraft.util.Session;
+
+public class Queue {
+
+	private String game;
+	private Minecraft mc = Minecraft.getMinecraft();
+	private ArrayList<EntityClientPlayerMP> players = new ArrayList<EntityClientPlayerMP>();
+
+	public Queue(String game) {
+		this.game = game;
+		LoadingScreen.getInstance().queues.put(game, this);
+	}
+
+	public static Queue getByName(String name) {
+		return LoadingScreen.getInstance().queues.get(game);
+	}
+
+	public static boolean existFor(String game) {
+		return LoadingScreen.getInstance().queues.containsKey(game);
+	}
+
+	public String getGame() {
+		return game;
+	}
+
+	public ArrayList<EntityClientPlayerMP> getPlayers() {
+		return players;
+	}
+
+	public int getPosition(EntityClientPlayerMP player) {
+		return players.indexOf(player) + 1;
+	}
+	public void addPlayer(EntityClientPlayerMP player) {
+		players.add(player);
+	}
+	
+	public void removePlayer(EntityClientPlayerMP player) {
+		players.remove(player);
+	}
+
+}

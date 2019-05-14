@@ -1,0 +1,5 @@
+package fr.ow4rd.client.gui;
+
+public class LoadingScreen {
+
+}

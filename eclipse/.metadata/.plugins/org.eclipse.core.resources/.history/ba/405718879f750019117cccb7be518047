@@ -1,0 +1,28 @@
+package fr.ow4rd.client.gui;
+
+import java.util.HashMap;
+
+import fr.ow4rd.client.queue.queues.Queue;
+import net.minecraft.client.entity.EntityClientPlayerMP;
+
+public class LoadingScreen {
+	
+	private static LoadingScreen instance;
+	
+	public HashMap<String, Queue> queues = new HashMap<String, Queue>();
+	
+	public static LoadingScreen getInstance() {return instance;}
+	
+	
+	public static void launch(String game, EntityClientPlayerMP player) {
+		if(!Queue.existFor(game)) {
+			Queue queue = new Queue(game);
+		}
+		Queue queue = Queue.getByName(game);
+		if(queue.getPlayers().contains(player)) {
+			queue.removePlayer(player);
+			System.out.println(player + " a quitter la file d'attente.");
+		}
+	}
+
+}

@@ -1,0 +1,38 @@
+package fr.ow4rd.client.queue.queues;
+
+import fr.ow4rd.client.gui.LoadingScreen;
+import net.minecraft.client.entity.EntityClientPlayerMP;
+
+public class QueuesRunnable extends BukkitRunnable {
+	
+		public void run() {
+			for (final Queue queue : LoadingScreen.getInstance().queues.values()) {
+				if(queue.getPlayers().size() > 0) {
+					
+					new BukkitRunnable() {
+						
+						int current = 0;
+						
+							public void run() {
+								if(current > queue.getPlayers().size()) {
+									cancel();
+								}else {
+									EntityClientPlayerMP player = queue.getPlayers().get(current);
+									if(player != null) {
+										System.out.println("Connecté");
+									}
+								}
+							}
+						
+						
+					}.runTaskTimer(LoadingScreen.getInstance(), 0, 20){
+						
+					}else {
+						LoadingScreen.getInstance().queues.remove(queues)
+					}
+					
+				}
+			}
+	}
+
+}

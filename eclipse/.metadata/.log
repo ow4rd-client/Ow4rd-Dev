@@ -1,0 +1,130 @@
+!SESSION 2019-05-11 17:33:08.765 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190131-0130
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-05-11 17:36:36.162
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-11 17:36:36.211
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-05-11 18:21:52.929 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190131-0130
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-05-11 18:22:02.861
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-11 18:22:02.935
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-05-11 18:40:02.002 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190131-0130
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-05-11 18:40:10.113
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-11 18:40:10.142
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-05-12 17:45:22.159 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190131-0130
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-05-12 17:45:33.331
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-12 17:45:33.359
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-05-12 19:03:51.831 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190131-0130
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-05-12 19:04:01.460
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-12 19:04:01.492
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-05-12 19:12:02.398 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190131-0130
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-05-12 19:12:08.408
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-12 19:12:08.429
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-05-13 18:27:35.333 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190131-0130
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-05-13 18:27:44.430
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-13 18:27:44.487
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-05-13 21:21:28.264 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190131-0130
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-05-13 21:21:45.577
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-13 21:21:45.605
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-05-14 13:48:07.889 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190131-0130
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-05-14 13:48:18.166
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-14 13:48:18.200
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-05-14 14:24:52.117 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190131-0130
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/valeriedrougard/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-05-14 14:24:58.299
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-14 14:24:58.326
+!MESSAGE Using Apache MINA sshd as ssh client.

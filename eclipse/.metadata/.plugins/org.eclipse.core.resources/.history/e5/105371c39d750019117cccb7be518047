@@ -1,0 +1,42 @@
+package fr.ow4rd.client.queue.queues;
+
+import java.util.ArrayList;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityClientPlayerMP;
+import net.minecraft.util.Session;
+
+public class Queue {
+	
+	private String game;
+	private Minecraft mc = Minecraft.getMinecraft(); 
+	private ArrayList<EntityClientPlayerMP> players = new ArrayList<EntityClientPlayerMP>();
+	
+	
+	public Queue(String game) {
+		this.game = game;		
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static Queue getByName(String name) {
+		
+	}
+	public static boolean existFor(String game) {
+		
+	}
+	
+	
+	public String getGame() {
+		return game;
+	}
+	
+	public ArrayList<EntityClientPlayerMP> getPlayers() {
+		return players;
+	}
+	
+	public int getPosition(EntityClientPlayerMP player) {
+		return players.indexOf(player) + 1;
+				}
+	
+
+}
