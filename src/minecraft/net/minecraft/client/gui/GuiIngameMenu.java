@@ -30,12 +30,13 @@ public class GuiIngameMenu extends GuiScreen
         this.buttonList.clear();
         byte var1 = -16;
         boolean var2 = true;
-        this.buttonList.add(new ButtonMainMenu(1, 20,  170, 160, 20, "Retour Au Menu"));
-        this.buttonList.add(new ButtonMainMenu(0, 20,  200, 160, 20, "Menu Options"));
-        this.buttonList.add(new ButtonMainMenu(4, 20,  230, 160, 20, "Retour En Jeu"));
+        this.buttonList.add(new ButtonMainMenu(1, 20,  this.height / 2 - 80, 160, 20, "Retour Au Menu"));
+        this.buttonList.add(new ButtonMainMenu(0, 20,  this.height / 2 - 50, 160, 20, "Menu Options"));
+        this.buttonList.add(new ButtonMainMenu(4, 20,  this.height / 2 - 20, 160, 20, "Retour En Jeu"));
         
         
-       
+        
+
         
     }
 
@@ -97,7 +98,7 @@ public class GuiIngameMenu extends GuiScreen
     	this.drawRect(0 + 200, this.height, 0 + 5, this.height - 5, new Color(128, 0, 128, 150).getRGB());
     	this.drawRect(0, this.height, 0 + 5, 0 + 5, new Color(128, 0, 128, 150).getRGB());
     	
-    	Utils.drawImage(20, 10 , 150, 150, logo);
+    	Utils.drawImage(40, this.height / 4 - 90 , 100, 100, logo);
     	
         super.drawScreen(p_73863_1_, p_73863_2_, p_73863_3_);
     }

@@ -1,5 +1,6 @@
 package net.minecraft.client.gui;
 
+import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -32,6 +33,7 @@ import com.mojang.authlib.GameProfile;
 
 import fr.ow4rd.client.button.ButtonMainMenu;
 import fr.ow4rd.client.gui.GuiConnectionQueue;
+import fr.ow4rd.client.utils.Utils;
 
 public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 	private static final Logger logger = LogManager.getLogger();
@@ -63,6 +65,9 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 			"textures/gui/title/minecraft.png");
 
 	/** An array of all the paths to the panorama pictures. */
+	private static final ResourceLocation logo = new ResourceLocation("textures/ow4rd/gui/logo.png");
+	
+	
 	private static final ResourceLocation[] titlePanoramaPaths = new ResourceLocation[] {
 			new ResourceLocation("textures/gui/title/background/panorama_0.png"),
 			new ResourceLocation("textures/gui/title/background/panorama_1.png"),
@@ -174,17 +179,14 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 		boolean var2 = true;
 		int var3 = this.height / 4 + 48;
 
-		if (this.mc.isDemo()) {
-		} else {
-			this.addSingleplayerMultiplayerButtons(var3, 24);
-		}
-
-		this.buttonList.add(new ButtonMainMenu(0, this.width / 2 - 100, var3 + 72 + 12, 98, 20,
-				I18n.format("menu.options", new Object[0])));
-
-		this.buttonList.add(
-				new ButtonMainMenu(4, this.width / 2 + 2, var3 + 72 + 12, 98, 20, I18n.format("menu.quit", new Object[0])));
-		Object var4 = this.field_104025_t;
+//TODO: button
+		this.buttonList.add(new ButtonMainMenu(10, 30, 120 ,110, 20, "Serveurs"));
+		this.buttonList.add(new ButtonMainMenu(1, 30, 150 ,110, 20, "Sans Amis"));
+		this.buttonList.add(new ButtonMainMenu(0, 30, 180 ,110, 20, "Paramétres"));
+		this.buttonList.add(new ButtonMainMenu(4, 30, this.height - 30 ,110, 20, "Quitter"));
+		
+		
+		
 
 		synchronized (this.field_104025_t) {
 			this.field_92023_s = this.fontRendererObj.getStringWidth(this.field_92025_p);
@@ -198,21 +200,15 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 	}
 
 	/**
-	 * Adds Singleplayer and Multiplayer buttons on Main Menu for players who have
-	 * bought the game.
-	 */
-	private void addSingleplayerMultiplayerButtons(int p_73969_1_, int p_73969_2_) {
-		this.buttonList.add(
-				new ButtonMainMenu(1, this.width / 2 - 100, p_73969_1_, I18n.format("menu.singleplayer", new Object[0])));
-	}
-
-	/**
 	 * Adds Demo buttons on Main Menu for players who are playing Demo.
 	 */
 
 	protected void actionPerformed(GuiButton p_146284_1_) {
 		if (p_146284_1_.id == 0) {
 			this.mc.displayGuiScreen(new GuiOptions(this, this.mc.gameSettings));
+			// this.mc.displayGuiScreen(new GuiConnectionQueue(this));
+		}
+		if(p_146284_1_.id == 10) {
 			this.mc.displayGuiScreen(new GuiConnectionQueue(this));
 		}
 
@@ -440,17 +436,6 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 		this.mc.getTextureManager().bindTexture(minecraftTitleTextures);
 		GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
 
-		if ((double) this.updateCounter < 1.0E-4D) {
-			this.drawTexturedModalRect(var6 + 0, var7 + 0, 0, 0, 99, 44);
-			this.drawTexturedModalRect(var6 + 99, var7 + 0, 129, 0, 27, 44);
-			this.drawTexturedModalRect(var6 + 99 + 26, var7 + 0, 126, 0, 3, 44);
-			this.drawTexturedModalRect(var6 + 99 + 26 + 3, var7 + 0, 99, 0, 26, 44);
-			this.drawTexturedModalRect(var6 + 155, var7 + 0, 0, 45, 155, 44);
-		} else {
-			this.drawTexturedModalRect(var6 + 0, var7 + 0, 0, 0, 155, 44);
-			this.drawTexturedModalRect(var6 + 155, var7 + 0, 0, 45, 155, 44);
-		}
-
 		var4.setColorOpaque_I(-1);
 		GL11.glPushMatrix();
 		GL11.glTranslatef((float) (this.width / 2 + 90), 70.0F, 0.0F);
@@ -459,26 +444,21 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 				MathHelper.sin((float) (Minecraft.getSystemTime() % 1000L) / 1000.0F * (float) Math.PI * 2.0F) * 0.1F);
 		var8 = var8 * 100.0F / (float) (this.fontRendererObj.getStringWidth(this.splashText) + 32);
 		GL11.glScalef(var8, var8, var8);
-		this.drawCenteredString(this.fontRendererObj, this.splashText, 0, -8, -256);
 		GL11.glPopMatrix();
-		String var9 = "Minecraft 1.7.10";
 
-		if (this.mc.isDemo()) {
-			var9 = var9 + " Demo";
+		// TODO: main
+
+		this.drawRect(0, 12, 170, this.height, new Color(81, 21, 24, 200).getRGB());
+
+		int r = 43, g = 12, b = 20, y = 12;
+		for (int i = 12; i > 0; i--) {
+			r = r + 2;
+			b = b - 1;
+			this.drawRect(0, y, 170, y - 1, new Color(r, g, b, 225).getRGB());
+			y = y - 1;
 		}
+		Utils.drawImage(30, 10, 100, 100, logo);
 
-		this.drawString(this.fontRendererObj, var9, 2, this.height - 10, -1);
-		String var10 = "Copyright Mojang AB. Do not distribute!";
-		this.drawString(this.fontRendererObj, var10, this.width - this.fontRendererObj.getStringWidth(var10) - 2,
-				this.height - 10, -1);
-
-		if (this.field_92025_p != null && this.field_92025_p.length() > 0) {
-			drawRect(this.field_92022_t - 2, this.field_92021_u - 2, this.field_92020_v + 2, this.field_92019_w - 1,
-					1428160512);
-			this.drawString(this.fontRendererObj, this.field_92025_p, this.field_92022_t, this.field_92021_u, -1);
-			this.drawString(this.fontRendererObj, this.field_146972_A, (this.width - this.field_92024_r) / 2,
-					((GuiButton) this.buttonList.get(0)).field_146129_i - 12, -1);
-		}
 
 		super.drawScreen(p_73863_1_, p_73863_2_, p_73863_3_);
 	}
