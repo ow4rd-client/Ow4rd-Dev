@@ -1,0 +1,42 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 16/05/19 19:07
+Description: Exception in server tick loop
+
+java.lang.NullPointerException: Exception in server tick loop
+	at net.minecraft.item.ItemStack.getMaxStackSize(ItemStack.java:216)
+	at net.minecraft.util.WeightedRandomChestContent.generateChestContents(WeightedRandomChestContent.java:47)
+	at net.minecraft.world.gen.structure.StructureMineshaftPieces$Corridor.generateStructureChestContents(StructureMineshaftPieces.java:298)
+	at net.minecraft.world.gen.structure.StructureMineshaftPieces$Corridor.addComponentParts(StructureMineshaftPieces.java:361)
+	at net.minecraft.world.gen.structure.StructureStart.generateStructure(StructureStart.java:48)
+	at net.minecraft.world.gen.structure.MapGenStructure.generateStructuresInChunk(MapGenStructure.java:102)
+	at net.minecraft.world.gen.ChunkProviderGenerate.populate(ChunkProviderGenerate.java:382)
+	at net.minecraft.world.gen.ChunkProviderServer.populate(ChunkProviderServer.java:256)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1178)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:151)
+	at net.minecraft.server.MinecraftServer.initialWorldChunkLoad(MinecraftServer.java:327)
+	at net.minecraft.server.integrated.IntegratedServer.loadAllWorlds(IntegratedServer.java:94)
+	at net.minecraft.server.integrated.IntegratedServer.startServer(IntegratedServer.java:110)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:459)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:744)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Mac OS X (x86_64) version 10.14
+	Java Version: 1.8.0_171, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 920891952 bytes (878 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated

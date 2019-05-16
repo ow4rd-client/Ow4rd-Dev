@@ -1,0 +1,96 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 16/05/19 19:07
+Description: Exception getting block type in world
+
+java.lang.NullPointerException: Exception getting block type in world
+	at net.minecraft.item.ItemStack.getMaxStackSize(ItemStack.java:216)
+	at net.minecraft.util.WeightedRandomChestContent.generateChestContents(WeightedRandomChestContent.java:47)
+	at net.minecraft.world.gen.structure.StructureMineshaftPieces$Corridor.generateStructureChestContents(StructureMineshaftPieces.java:298)
+	at net.minecraft.world.gen.structure.StructureMineshaftPieces$Corridor.addComponentParts(StructureMineshaftPieces.java:361)
+	at net.minecraft.world.gen.structure.StructureStart.generateStructure(StructureStart.java:48)
+	at net.minecraft.world.gen.structure.MapGenStructure.generateStructuresInChunk(MapGenStructure.java:102)
+	at net.minecraft.world.gen.ChunkProviderGenerate.populate(ChunkProviderGenerate.java:382)
+	at net.minecraft.world.gen.ChunkProviderServer.populate(ChunkProviderServer.java:256)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1178)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:151)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:164)
+	at net.minecraft.world.World.getChunkFromChunkCoords(World.java:434)
+	at net.minecraft.world.World.getBlock(World.java:340)
+	at net.minecraft.world.World.doesBlockHaveSolidTopSurface(World.java:2726)
+	at net.minecraft.world.SpawnerAnimals.canCreatureTypeSpawnAtLocation(SpawnerAnimals.java:211)
+	at net.minecraft.world.SpawnerAnimals.findChunksForSpawning(SpawnerAnimals.java:127)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:157)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:688)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:615)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:132)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:498)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:744)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.item.ItemStack.getMaxStackSize(ItemStack.java:216)
+	at net.minecraft.util.WeightedRandomChestContent.generateChestContents(WeightedRandomChestContent.java:47)
+	at net.minecraft.world.gen.structure.StructureMineshaftPieces$Corridor.generateStructureChestContents(StructureMineshaftPieces.java:298)
+	at net.minecraft.world.gen.structure.StructureMineshaftPieces$Corridor.addComponentParts(StructureMineshaftPieces.java:361)
+	at net.minecraft.world.gen.structure.StructureStart.generateStructure(StructureStart.java:48)
+	at net.minecraft.world.gen.structure.MapGenStructure.generateStructuresInChunk(MapGenStructure.java:102)
+	at net.minecraft.world.gen.ChunkProviderGenerate.populate(ChunkProviderGenerate.java:382)
+	at net.minecraft.world.gen.ChunkProviderServer.populate(ChunkProviderServer.java:256)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1178)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:151)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:164)
+	at net.minecraft.world.World.getChunkFromChunkCoords(World.java:434)
+
+-- Requested block coordinates --
+Details:
+	Found chunk: true
+	Location: World: (1088,77,800), Chunk: (at 0,4,0 in 68,50; contains blocks 1088,0,800 to 1103,255,815), Region: (2,1; contains chunks 64,32 to 95,63, blocks 1024,0,512 to 1535,255,1023)
+Stacktrace:
+	at net.minecraft.world.World.getBlock(World.java:340)
+	at net.minecraft.world.World.doesBlockHaveSolidTopSurface(World.java:2726)
+	at net.minecraft.world.SpawnerAnimals.canCreatureTypeSpawnAtLocation(SpawnerAnimals.java:211)
+	at net.minecraft.world.SpawnerAnimals.findChunksForSpawning(SpawnerAnimals.java:127)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:157)
+
+-- Affected level --
+Details:
+	Level name: mcpworld
+	All players: 1 total; [EntityPlayerMP['Player854'/48, l='mcpworld', x=1001,25, y=63,00, z=672,76]]
+	Chunk stats: ServerChunkCache: 865 Drop: 0
+	Level seed: -1587754402
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 76145 game time, 10329 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 78779 (now: false), thunder time: 25395 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:688)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:615)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:132)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:498)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:744)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Mac OS X (x86_64) version 10.14
+	Java Version: 1.8.0_171, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 812449864 bytes (774 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 103
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['Player854'/48, l='mcpworld', x=1001,25, y=63,00, z=672,76]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated
