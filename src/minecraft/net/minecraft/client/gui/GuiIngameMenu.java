@@ -3,6 +3,7 @@ package net.minecraft.client.gui;
 import java.awt.Color;
 
 import fr.ow4rd.client.button.ButtonMainMenu;
+import fr.ow4rd.client.gui.shop.GuiShop;
 import fr.ow4rd.client.utils.Utils;
 import net.minecraft.client.gui.achievement.GuiAchievements;
 import net.minecraft.client.gui.achievement.GuiStats;
@@ -49,10 +50,13 @@ public class GuiIngameMenu extends GuiScreen
                 break;
 
             case 1:
+            	
+            	
                 p_146284_1_.enabled = false;
                 this.mc.theWorld.sendQuittingDisconnectingPacket();
                 this.mc.loadWorld((WorldClient)null);
                 this.mc.displayGuiScreen(new GuiMainMenu());
+                
 
             case 2:
             case 3:
@@ -60,8 +64,10 @@ public class GuiIngameMenu extends GuiScreen
                 break;
 
             case 4:
-                this.mc.displayGuiScreen((GuiScreen)null);
-                this.mc.setIngameFocus();
+            	this.mc.displayGuiScreen(new GuiShop());
+
+//                this.mc.displayGuiScreen((GuiScreen)null);
+  //              this.mc.setIngameFocus();
                 break;
 
             case 5:

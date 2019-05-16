@@ -8,6 +8,14 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="setString"/>
+			<item value="NBTTagCompound"/>
+			<item value="save"/>
+			<item value="player"/>
+			<item value="saveNBTData"/>
+			<item value="Over"/>
+			<item value="Hover"/>
+			<item value="bind"/>
 			<item value=", &quot;&quot;"/>
 			<item value=");"/>
 			<item value="));"/>
@@ -15,11 +23,6 @@
 			<item value="shadow"/>
 			<item value="shader"/>
 			<item value=""/>
-			<item value="sound"/>
-			<item value="Setting user"/>
-			<item value="GuiConnecting"/>
-			<item value="player"/>
-			<item value="Player"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
